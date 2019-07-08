@@ -8,7 +8,7 @@ const usersPhoneNumber = {
 
 function filterObjVal(obj, pattern) {
     return Object
-            .values(obj)
+            .values(obj) // ['+1000203948', '+2384791238', '+297490127']
             .reduce((res, v, i) => {
                 if(v.includes(pattern)) {
                     res[Object.keys(obj)[i]] = v
